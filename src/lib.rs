@@ -44,7 +44,7 @@ use handl_plugin_lib_handl::HandlLibraryPlugin;
 /// The handl source declaring the kv interface — the single source of
 /// truth for the kv API surface. Loaded at compile time from the
 /// kit-stdlib data dir.
-const KV_HNL: &str = include_str!("../../../handl-packages/kv/kv.hnl");
+const KV_HNL: &str = include_str!("../handl-packages/kv/kv.hnl");
 
 // ---------------------------------------------------------------------------
 // KvLibraryPlugin (wraps HandlLibraryPlugin)

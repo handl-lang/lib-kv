@@ -9,7 +9,7 @@ use crate::error::KvError;
 /// The handl source declaring the kv `op` interface — the single source
 /// of truth for the kv API surface. Loaded at compile time from the
 /// kit-stdlib data dir.
-const KV_HNL: &str = include_str!("../../../handl-packages/kv/kv.hnl");
+const KV_HNL: &str = include_str!("../handl-packages/kv/kv.hnl");
 
 /// The op names declared in `kv.hnl`.
 const KV_OPS: &[&str] = &[
