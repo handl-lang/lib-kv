@@ -3,8 +3,10 @@ name = "handl-plugin-lib-kv"
 version = "0.1.0"
 edition = "2024"
 description = "Key-value store abstraction for the handl runtime."
-license = "MIT OR Apache-2.0"
+license = "MIT"
 repository = "https://github.com/handl-lang/lib-kv"
+homepage = "https://github.com/handl-lang/lib-kv"
+readme = "README.md"
 
 [dependencies]
 handl-ops = { git = "https://github.com/handl-lang/kernel", branch = "main" }

@@ -8,9 +8,9 @@ A key-value store is a stateful data abstraction, not an OS capability —
 unlike the platform services (filesystem, env, http) it is not tied to
 any host feature, so backends range from in-memory `HashMap` to sled,
 SQLite, or Redis. The interface is declared once in
-`handl-packages/kv/kv.hnl` (`cap` declarations, ADR-0077) and the Rust
-side keeps only the trait + module adapter; concrete backends live in
-sibling crates (e.g. `handl-lang/lib-kv-hashmap`'s `HashKeyValueStore`).
+`handl-packages/kv/kv.hnl` (`cap` declarations) and the Rust side keeps
+only the trait + module adapter; concrete backends live in sibling crates
+(e.g. `lib-kv-hashmap`'s `HashKeyValueStore`).
 
 The `kv.*` surface callable from handl expressions:
 
