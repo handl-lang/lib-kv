@@ -1,6 +1,6 @@
 use std::fmt;
 
-use handl_platform::EvalError as VmError;
+use handl_ops::OpError;
 
 /// Errors produced by key-value store implementations.
 #[derive(Debug, Clone)]
@@ -20,8 +20,8 @@ impl fmt::Display for KvError {
 
 impl std::error::Error for KvError {}
 
-impl From<KvError> for VmError {
+impl From<KvError> for OpError {
     fn from(err: KvError) -> Self {
-        VmError::Other(err.to_string())
+        OpError::Other(err.to_string())
     }
 }
