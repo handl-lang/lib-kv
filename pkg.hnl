@@ -1,0 +1,13 @@
+-- lib-kv: the `kv` module — the key-value store abstraction for the
+-- handl runtime. Transitional layout: the .hnl surface is
+-- `handl-packages/kv/kv.hnl` (cap declarations); the Rust side keeps
+-- the `KeyValueStore` trait + `KeyValueStoreModule` adapter, and
+-- concrete backends live in sibling crates (e.g. lib-kv-hashmap).
+{
+  modules: ["kv"],
+  name: "kv",
+  description: "Key-value store abstraction — the kv.* surface plus the Rust KeyValueStore trait backends implement.",
+  license: "MIT",
+  keywords: ["kv", "key-value", "store", "trait", "handl"],
+  homepage: "https://github.com/handl-lang/lib-kv",
+}
