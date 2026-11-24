@@ -1,2 +1,2 @@
-example: type.num = 42;
+example: type.num := 42;
 example
