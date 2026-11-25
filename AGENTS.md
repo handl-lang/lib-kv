@@ -13,7 +13,7 @@ or Redis.
 | `handl-packages/kv/kv.hnl` | the `.hnl` surface — `cap` declarations for `kv.*` |
 | `src/lib.rs`, `src/key_value_store.rs`, `src/error.rs`, `src/ops.rs` | the `KeyValueStore` trait + `KeyValueStoreModule` adapter |
 | `examples/` | usage examples |
-| `Cargo.toml`, `xtask/`, `atoms.yaml` | Rust crate + gate |
+| `Cargo.toml`, `xtask/` | Rust crate + gate |
 | `pkg.hnl` | manifest — `modules: ["kv"]` |
 | `scripts/hnl-gate.sh`, `workflows/gate.yaml` | `.hnl` gate + CI campaign |
 
