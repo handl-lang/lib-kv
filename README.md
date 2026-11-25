@@ -52,7 +52,7 @@ src/key_value_store.rs     KeyValueStore trait, KeyValueStoreModule, the kv.* op
 src/error.rs               KvError
 examples/kv/main.hnl       a runnable .hnl example
 scripts/hnl-gate.sh        the shared hnl typecheck/lint/test gate
-ci.sh                      bupha entry — delegates to hnl-gate.sh
+workflows/gate.yaml                      bupha entry (handl-gates) — delegates to hnl-gate.sh
 ```
 
 Sibling-repo deps are git dependencies (`branch = "main"`); `[patch]`
@@ -62,7 +62,7 @@ tables resolve them from sibling checkouts.
 
 ```bash
 cargo test        # the Rust suite (plugin id/capabilities)
-bash ci.sh        # the bupha gate — hnl typecheck/lint/test over .hnl
+cargo xtask gate  # the bupha gate — hnl typecheck/lint/test over .hnl
                   # sources (the kv.hnl surface is arrow-dialect, so the
                   # canonical detector skips it by design)
 ```
